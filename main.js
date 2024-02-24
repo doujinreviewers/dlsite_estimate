@@ -57,6 +57,5 @@
       observer.disconnect()
     }
   })
-  const targetNode = document.getElementById("work_right");
-  observer.observe(targetNode, {childList: true, subtree: true})
+  observer.observe(document, {childList: true, subtree: true})
 }
