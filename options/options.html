@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="options.css">
+    <title>DLsite 売上推計</title>
+
+    <style>
+      body {
+        width: 40em;
+      }
+      textarea {
+        width: 30em;
+        height: 20em;
+      }
+      button {
+        margin-top: 20px;
+      }
+      .radios {
+        display: flex;
+      }
+
+      .radios label {
+        margin: 0.2em;
+        padding: 0.2em;
+        border: 1px solid #dddddd;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <h2>フォーマット設定</h2>
+    <div class="radios">
+      <label>
+        <input type="radio" id="format1" name="format" value="1">123,456円
+      </label>
+      <label>
+        <input type="radio" id="format2" name="format" value="2">12万3456円
+      </label>
+    </div>
+
+    <h2>テキストデザイン設定</h2>
+    <div class="radios">
+      <label>
+        <input type="radio" id="show1" name="show" value="1">123,456円
+      </label>
+      <label class="gold">
+        <input type="radio" id="show2" name="show" value="2">12万3456円
+      </label>
+    </div>
+
+    <button id="save">保存</button><output id="status"></output>
+
+    <script src="options.js"></script>
+  </body>
+</html>

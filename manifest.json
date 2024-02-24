@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "dlsite estimate",
+  "version": "0.0.1",
+  "description": "DLsiteの作品ページに推定売上額を表示する",
+
+  "permissions": ["storage"],
+
+  "content_scripts": [
+    {
+      "exclude_matches": ["*://*.dlsite.com/*touch/work/=/product_id/*"],
+      "matches": ["*://*.dlsite.com/*/work/=/product_id/*"],
+      "js": ["main.js"],
+      "css": ["style.css"]
+    }
+  ],
+  "options_ui":{
+    "page": "options/options.html"
+  }
+
+}

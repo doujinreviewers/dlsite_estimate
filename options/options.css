@@ -1,0 +1,9 @@
+.gold {
+  font-size:1.5em;
+  text-align:center;
+  line-height:0.95em;
+  font-weight:bold;
+  color: transparent;
+  background: linear-gradient(0deg, #B67B03 0%, #DAAF08 45%, #FEE9A0 70%, #DAAF08 85%, #B67B03 90% 100%); 
+  -webkit-background-clip: text;
+}
